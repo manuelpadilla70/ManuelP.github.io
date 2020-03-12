@@ -7,21 +7,98 @@
   <body>
     <h1 align="middle">About Manuel Padilla</h1>
     </body>
-<p>I love to run, play clash of clans, and working out</p>
+
 </body>	
 	<style>
 body{background-image: url("https://cdn.clipart.email/3ab52cdee8fed542ce7da250894e42bd_pastiche-the-running-man-creative-tool-development-for-after-_358-480.gif");background-repeat: no-repeat;background-size: cover;}	
 </style>
-<img src="https://miro.medium.com/max/2880/1*m7eS70d2Nhtk4-3YdHp3mg.jpeg" width=40% height=50% align="down">
-<h2>HTML Links</h2>
-<p><a href="index.html
-">My first website</a></p>
-<p><a href="projects.html
-">Project</a></p>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
 <body>
-   <p>HTML background music test</p>
-   <embed src="Fur Elise.mp3" autostart="true">
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <p><a href="index.html
+      ">Home Page</a></p>
+      <p><a href="projects.html
+      ">Project</a></p>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
 </body>
+<p>I love to run, play clash of clans, and working out</p>
+<img src="https://miro.medium.com/max/2880/1*m7eS70d2Nhtk4-3YdHp3mg.jpeg" width=40% height=50% align="top">
 </html>		
 
 
